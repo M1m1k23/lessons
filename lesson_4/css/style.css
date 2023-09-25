@@ -1,0 +1,43 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+.title_big {
+    color: red;
+}
+ul {
+    color: blue;
+}
+h2 {
+    color: brown;
+}
+
+.review h2 {
+    color: rgb(116, 72, 236);
+}
+.review__text {
+	color: yellowgreen;
+}
+
+.power__text .span_p {
+    color: aquamarine;
+}
+.power__text.text {
+    color: chocolate;
+}
+#power-id {
+    color: darkblue;
+}
+div.text {
+    color: green;
+}
+.characteristics__title {
+    color: darkred;
+}
+.characteristics li {
+    color: dodgerblue;
+}
+.footer > a {
+    color: rgb(240, 139, 17);
+}
