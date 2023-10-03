@@ -1,0 +1,109 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+}
+
+/*#region consulting */
+.consulting {
+    max-width: 722px;
+    padding: 30px 15px;
+    margin: 0 auto;
+}
+.consulting__img, .benefits__img {
+    max-width: 100%;
+}
+.consulting__img {
+    margin-bottom: 37px;
+}
+.consulting__title, .consulting__sub-title,
+.benefits__title, .benefits__sub-title {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.27;
+    font-weight: 600;
+}
+.consulting__title {
+    color: #37393F;
+    font-size: 30px;
+    margin-bottom: 13px;
+}
+.consulting__text {
+    line-height: 1.46;
+    margin-bottom: 40px;
+}
+.consulting__sub-title {
+    color: #6B77E5;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.benefits {
+    font-size: 0;
+}
+.benefits__img {
+    width: 331px;
+    margin-right: 29px;
+}
+.benefits-content {
+    display: inline-block;
+    width: 332px;
+    font-size: 18px;
+}
+.benefits__title {
+    color: #37393F;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.benefits__sub-title {
+    color: #40DDB6;
+    font-size: 20px;
+    margin-bottom: 21px;
+}
+.benefits__list li {
+    margin-bottom: 35px;
+}
+/* #endregion*/
+
+/*#region Jewellery */
+.jewellery {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.jewellery-content {
+    display: inline-block;
+    width: 563px;
+    margin-right: 38px;
+    padding: 21px 0px;
+}
+.jewellery__labe {
+    color: #D06B00;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+.jewellery__title {
+    color: #0E333D;
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-bottom: 25px;
+}
+.jewellery__text {
+    color: #474747;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.jewellery__img {
+    max-width: 100%;
+}
+.jewellery__img img {
+    margin-right: 22px;
+}
