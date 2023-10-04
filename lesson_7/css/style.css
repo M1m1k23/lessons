@@ -1,0 +1,256 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+}
+.licencing__big-title,
+.licencing__title,
+.licencing__sub-title,
+.project__title {
+    font-family: "Poppins", sans-serif;
+    color: #37393F;
+    font-weight: 700;
+}
+/*#region licencing */
+.licencing {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.licencing__label {
+    color: #37393F;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.licencing__label span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #40DDB6;
+    margin-right: 6px;
+}
+
+.licencing__big-title {
+    line-height: 1.21;
+    font-size: 60px;
+    text-align: center;
+}
+.licencing__graphics {
+    margin-top: 70px;
+}
+.licencing__title {
+    font-size: 40px;
+    line-height: 1.21;
+    margin-bottom: 11px;
+}
+.licencing__text {
+    line-height: 1.46;
+}
+.licencing__graphics-text {
+    margin-bottom: 32px;
+}
+.licencing__sub-title {
+    font-size: 30px;
+}
+.licencing__sub-title span {
+    color: #40DDB6;
+    font-weight: 400;
+}
+
+.licencing__photography, .licencing__fonts {
+    margin-top: 100px;
+}
+
+.licencing__text {
+    margin-bottom: 24px;
+}
+.licencing__text a {
+    color: #40DDB6;
+}
+.licencing__images {
+    margin-top: 8px;
+    color: #40DDB6;
+    line-height: 1.46;
+}
+.licencing__unsplash {
+    margin-top: 24px;
+}
+
+/* #endregion*/
+
+/*#region Project */
+.project {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+.project__title {
+    font-size: 40px;
+    line-height: 127%;
+    margin-bottom: 13px;
+}
+.project__text {
+    line-height: 1.46;
+    margin-bottom: 35px;
+}
+.project__text p:not(:last-child) {
+    margin-bottom: 35px;
+}
+.project__list, .project__number-list {
+    margin-bottom: 35px;
+    padding-left: 16px;
+}
+.project__item {
+    list-style: inside;
+}
+.project__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+.project__item-number {
+    list-style: none;
+}
+/* #endregion*/
+
+/*#region Clothing */
+.clothing {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.clothing__title {
+    color: #3C4242;
+    font-family: "Core Sans C", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.clothing__title span {
+    display: inline-block;
+    width: 6px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+    margin-right: 15px;
+    margin-bottom: -4px;
+    
+}
+.clothing__content {
+    padding-left: 20px;
+}
+.clothing__sub-title {
+    color: #807D7E;
+    font-family: "Core Sans C", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.clothing__text {
+    margin-bottom: 25px;
+    color: #807D7E;
+    font-family: "Causten", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+.clothing__text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.clothing__text p span {
+    font-weight: 700;
+}
+.clothing__btn {
+    color: #807D7E;
+    font-family: "Causten", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+/* #endregion*/
+
+/*#region Jewellery */
+.jewellery {
+    max-width: 1133px;
+    margin: 0 auto;
+    padding: 100px 15px;
+    font-family: "Cormorant Infant", sans-serif;
+}
+.jewellery__content {
+    display: inline-block;
+    max-width: 503px;
+    margin-right: 75px;
+}
+.jewellery__label {
+    color: #D58417;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+.jewellery__title {
+    color: #000;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-bottom: 31px;
+}
+.jewellery__text {
+    color: #606060;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.40;
+}
+.jewellery__images {
+    display: inline-block;
+    vertical-align: top;
+}
+.jewellery__image {
+    display: inline-block;
+    border: 1px solid #502203;
+    border-radius: 235px;
+    vertical-align: middle;
+}
+.jewellery__image img {
+    border-radius: 235px;
+}
+.jewellery__image_1 {
+    margin-right: 22px;
+    width: 177px;
+    height: 336px;
+}
+
+.jewellery__image_1 img {
+    padding-top: 15px;
+    margin-left: -12px;
+}
+.jewellery__image_2 {
+    width: 308px;
+    height: 506px;  
+}
+
+.jewellery__image_2 img {
+    padding-top: 20px;
+    margin-left: -12px;
+}
+
+/* #endregion*/
