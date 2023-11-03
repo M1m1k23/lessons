@@ -1,0 +1,640 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding: 30px;
+    color: #7D7D7D;
+}
+.paracticing {
+    background-color: #cb04f3;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 30px 15px;
+}
+.paracticing > *:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.paracticing__lsit > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+.paracticing a {
+    display: block;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 23px;
+    margin: 0 auto;
+}
+
+.hover__link {
+    background-color: #771111;
+    color: #cb04f3;
+    transition: all .5s 0s ease;
+}
+.hover__link:hover {
+    background: linear-gradient(7deg, rgba(171,44,196,1) 0%, rgba(49,227,174,1) 48%, rgba(45,49,253,1) 95%);
+    color: #fff;
+    text-decoration: underline;
+}
+
+.active__link {
+    background-color: #00e6ee;
+    color: #ffffff;
+}
+.active__link:active {
+    background-color: #ee0000;
+    color: #000000;
+}
+
+.visited__link {
+    background-color: #000000;
+    color: #fff;
+}
+.visited__link:visited {
+    color: #666666;
+}
+
+.focus__link {
+    background-color: #018170;
+    color: #fff;
+}
+.focus__link:focus {
+    outline: 3px solid #15ff00;
+    background-color: #13b39d;
+}
+
+.target__link {
+    background-color: #018136;
+    color: #fff;
+    transition: all .5s ease 0s;
+}
+.target__link:hover {
+    background-color: #0f572d;
+}
+.paracticing__img {
+    text-align: center;
+}
+
+.paracticing__img img {
+    width: 250px;
+    visibility: hidden;
+}
+.paracticing__img img:target {
+    visibility: visible;
+}
+.paracticing__first-child, 
+.paracticing__last-child, 
+.paracticing__first-of-type,
+.paracticing__last-of-type,
+.paracticing__nth-child {
+    outline: 3px solid #00ffbf;
+    padding: 10px 10px;
+}
+.paracticing__first-child > *:not(:last-child), 
+.paracticing__last-child > *:not(:last-child),
+.paracticing__first-of-type > *:not(:last-child),
+.paracticing__last-of-type > *:not(:last-child),
+.paracticing__nth-child > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+.paracticing__first-child p, 
+.paracticing__last-child p,
+.paracticing__first-of-type p,
+.paracticing__last-of-type p,
+.paracticing__nth-child p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fff;
+}
+.paracticing__first-child p:first-child {
+    background-color: #15ff00;
+    padding: 10px 5px;
+}
+
+.paracticing__last-child p:last-child {
+    background-color: #1900ff;
+    padding: 10px 5px
+}
+
+.paracticing__first-of-type p:first-of-type {
+    background-color: #771111;
+    padding: 10px 5px
+}
+.paracticing__last-of-type p:last-of-type {
+    background-color: #e0ac00;
+    padding: 10px 5px
+}
+
+.paracticing__nth-child p:nth-child(odd) {
+    background-color: #99450e;
+    padding: 10px 5px
+}
+.paracticing__nth-child p:nth-child(even) {
+    background-color: #0f6e7a;
+    padding: 10px 5px
+}
+.paracticing__title-before, .paracticing__title-after {
+    font-size: 28px;
+    color: #fff;
+}
+
+.paracticing__title-before::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #15ff00;
+    margin-right: 10px;
+}
+
+.paracticing__title-after::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 28px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #11fc5f;
+    
+}
+
+.game__container {
+    margin: 0 auto 200px auto;
+    max-width: 1200px;
+    min-height: 500px;
+    font-size: 0px;
+    background-color: #0f6e7a;
+}
+
+.game-line {
+    background-color: #8b00fd;
+    visibility: hidden;
+}
+
+
+.game-start {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+}
+
+.game-start:hover+.game-line,
+.game-line:hover,
+.game-line:hover+.game-line {
+    visibility: visible;
+}
+
+.game__line-01 {
+    width: 100%;
+    height: 30px;
+
+}
+
+.game__line-02 {
+    width: 40px;
+    height: 70px;
+    margin-left: auto;
+}
+
+.game__line-03 {
+    width: 100%;
+    height: 30px;
+    margin-left: auto;
+}
+
+.game__line-04 {
+    width: 30px;
+    height: 200px;
+    display: inline-block;
+}
+
+.game__line-05 {
+    width: 700px;
+    height: 25px;
+    display: inline-block;
+}
+
+.game__line-06 {
+    width: 25px;
+    height: 100px;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.game__line-07 {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 80px;
+}
+
+.game__line-08 {
+    display: inline-block;
+    width: 20px;
+    height: 100px;
+}
+
+.game__line-09 {
+    width: 100px;
+    height: 15px;
+    display: inline-block;
+}
+
+.game__line-10 {
+    width: 13px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: -45px;
+}
+
+.game__line-11 {
+    width: 60px;
+    height: 10px;
+    display: inline-block;
+    margin-bottom: -45px;
+}
+
+.game__line-12 {
+    width: 9px;
+    height: 41px;
+    margin-bottom: -76px;
+    display: inline-block;
+}
+
+.game__finich {
+    width: 30px;
+    height: 31px;
+    background-color: rgb(0, 255, 64);
+    display: inline-block;
+    margin: 0px 0px -105px -19px;
+}
+.consulting {
+    margin-bottom: 100px;
+}
+
+.consulting__business {
+    margin-bottom: 39px;
+}
+.consulting__benefits {
+    font-size: 0;
+    margin-bottom: 48px;
+}
+.consulting__asked {
+    margin-bottom: 100px;
+}
+.consulting__whitecollar {
+    margin-bottom: 150px;
+}
+.consulting__work {
+}
+
+.business {
+}
+.business__container, .benefits__container,
+.asked__container {
+    max-width: 722px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.business__title, .business__sub-title,
+.benefits__title, .benefits__sub-title,
+.asked__title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.business__text {
+    line-height: 1.46;
+}
+.business__text:not(:last-child) {
+    margin-bottom: 42px;
+}
+.business__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.business__sub-title {
+    color: #6B77E5;
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+.benefits {
+}
+.benefits__image {
+    display: inline-block;
+    max-width: 331px;
+    margin-right: 29px;
+}
+.benefits__image img {
+    width: 100%;
+}
+.benefits__content {
+    display: inline-block;
+    max-width: 332px;
+    vertical-align: top;
+}
+.benefits__title {
+    font-size: 25px;
+    text-transform: none;
+}
+.benefits__sub-title {
+    color: #40DDB6;
+    font-size: 20px;
+    margin-bottom: 21px;
+    text-transform: none;
+}
+.benefits__list {
+    font-size: 18px;
+    line-height: 1.27;
+}
+.benefits__item {
+    
+}
+.benefits__item::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../img/consulting/li.svg") 0 0 no-repeat;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.asked {
+}
+.asked__title {
+    margin-bottom: 15px;
+}
+.asked__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.whitecollar {
+}
+.whitecollar__container {
+    max-width: 705px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.label {
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+.whitecollar__label { 
+}
+
+.whitecollar__title,
+.whitecollar-item__title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    max-width: 414px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.whitecollar__text {
+    line-height: 1.46;
+    margin-bottom: 48px;
+}
+.whitecollar__text p:not(:last-child) {
+    margin-bottom: 16px;
+}
+.whitecollar__list {
+    margin-bottom: 40px;
+    
+}
+.whitecollar-item {
+    border: 1px solid #E3E3E3;
+    padding: 28px 35px;  
+}
+
+.whitecollar-item::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../img/consulting/li.svg") 0 0 no-repeat;
+    vertical-align: top;
+    margin-right: 19px;
+}
+.whitecollar-item:not(:last-child) {
+    margin-bottom: 31px;
+}
+.whitecollar-item__content {
+    display: inline-block;
+    max-width: 550px;
+}
+.whitecollar-item__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.whitecollar-item__text {
+    line-height: 1.46;
+}
+
+.whitecollar__btn {
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #FFF;
+    line-height: 1.2;
+    background-color: #6B77E5;
+    padding: 21px 35px;
+    transition: all .5s ease 0s;
+}
+.whitecollar__btn:hover {
+    background-color: #4a539e;
+}
+
+.work {
+    padding-bottom: 50px;
+}
+.work__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.work__head {
+    text-align: center;
+}
+.work__label {
+}
+
+.work__title, .work-card__title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.work__cards {
+    font-size: 0;
+    padding-top: 40px;
+}
+.work-card {
+    display: inline-block;
+    max-width: 386px;
+    background-color: #F4F4F4;
+    padding: 58px 43px;
+    text-align: center;
+    transition: all .5s ease 0s;
+}
+.work-card:hover {
+    box-shadow: 0px 0px 15px -3px #1d1d1d;
+    transform: scale(1.1);
+}
+.work-card::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-top: -94px;
+    margin-bottom: 22px;
+}
+.work-card__make::before {
+    background: url("../img/consulting/work/appointment.svg") 0 0 no-repeat;
+}
+.work-card__consultation::before {
+    background: url("../img/consulting/work/consultation.svg") 0 0 no-repeat;
+}
+.work-card__enjoy::before {
+    background: url("../img/consulting/work/enjoy.svg") 0 0 no-repeat;
+}
+.work-card:not(:last-child) {
+    margin-right: 31px;
+}
+.work-card__title {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.work-card__title:not(:last-child) {
+    margin-bottom: 16px;
+}
+.work-card__text {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.work-card__text:not(:last-child) {
+    margin-bottom: 37px;
+}
+.work-card__link {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #6B77E5;
+    text-transform: capitalize;
+    transition: all .5s ease 0s;
+}
+.work-card__link:hover {
+    color: #40DDB6;
+    letter-spacing: 1px;
+}
+
+.jeweller {
+    color: #000;
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
+    font-size: 0;
+}
+.container {
+    max-width: 1244px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.jeweller__title {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 1.15;
+    max-width: 488px;
+    margin-right: 3px;
+    vertical-align: top;
+    padding-top: 120px;
+}
+.jeweller__title::after {
+    content: "";
+    display: block;
+    width: 304px;
+    height: 3px;
+    background-color: #78473B;
+}
+.jeweller__images {
+    display: inline-block;
+    vertical-align: middle;
+}
+.jeweller__images:nth-child(1) {
+    vertical-align: top;
+}
+.jeweller-image__name {
+    display: inline-block;
+    font-size: 46px;
+    line-height: 1.13;
+    margin-bottom: 40px;
+
+}
+.jeweller-image {
+    display: inline-block;
+    max-width: 334px;
+    font-size: 0;
+    transition: all .5s ease 0s;
+}
+.jeweller-image:hover{
+    opacity: .8;
+}
+.jeweller-image:not(:last-child) {
+    margin-right: 55px;
+}
+.jeweller-image__link img {
+    margin-bottom: 25px;
+    box-shadow: -9px -9px 0px 1px rgb(255, 255, 255), -9px -9px 0px 2px rgb(0, 0, 0);
+    transition: all .5s ease 0s;
+}
+.jeweller-image__link img:hover {
+    transform: scale(1.05);
+}
+.jeweller-image-1 {
+    vertical-align: top;
+    margin-top: 32px;
+}
+.jeweller-image__title {
+    font-size: 24px;
+    line-height: 1.4;
+}
+.jeweller-image__price {
+    font-size: 24px;
+    line-height: 1.4;
+}
