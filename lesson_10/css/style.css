@@ -1,0 +1,23 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-size: 18px;
+}
+.page {
+    padding: 40px 50px;
+}
+.page p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.rast {
+    max-width: 800px;
+    padding-right: 10px;
+}
+.vector {
+    padding-right: 10px;
+}
