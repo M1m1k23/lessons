@@ -1,0 +1,191 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.wrap {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title {
+    color: #37393F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: #322aa3;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.menu {
+    text-align: center;
+}
+.menu__item {
+    display: inline-block;
+    position: relative;
+    background-color: #ec814f;
+    padding: 10px;
+    border-radius: 10px;
+}
+.menu__item:not(:last-child) {
+    margin-right: 20px;
+}
+.menu__link {
+    color: #fff;
+}
+.menu__item:hover {
+    background-color: #b6653f;
+    border-radius: 10px 10px 0 0;
+}
+.menu__item:hover .sub-menu {
+    visibility: visible;
+}
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 10px;
+    color: #fff;
+    width: 125px;
+    text-align: left;
+    visibility: hidden;
+    background-color: #7e4fec;
+    border-radius: 0 10px 0 10px;
+}
+.sub-menu__item {
+    position: relative;
+}
+.sub-menu__link:hover {
+    text-decoration: underline;
+}
+.sub-menu__item:hover .three-menu {
+    visibility: visible;
+}
+.sub-menu__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.three-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100px;
+    visibility: hidden;
+    padding: 10px;
+    background-color: #ec8e4f;
+    border-radius: 0 10px 0 10px;
+}
+.three-menu__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.three-menu__link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding-top: 80px;
+}
+.main__title {
+    position: sticky;
+    top: 65px;
+    text-align: center;
+    background-color: #37393F;
+    border-radius: 30px;
+    padding: 15px;
+    color:#ec814f;
+}
+.main__text {
+    background-color: #7e4fec;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.consulting {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.card {
+    font-size: 0;
+}
+.card__row:not(:last-child) {
+    margin-bottom: 31px;
+}
+.card__item {
+    display: inline-block;
+    position: relative;
+    max-width: 386px;
+}
+.card__item:not(:last-child) {
+    margin-right: 31px;
+}
+.card__image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(107, 119, 229, 0.70);
+    visibility: hidden;
+}
+.card__item:hover .card__image::after, .card__item:hover .card-social{
+    visibility: visible;
+}
+.card-info {
+    background-color: #fff;
+    width: 341px;
+    padding: 25px 30px;
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    z-index: 10;
+}
+.card-info__title {
+    text-align: center;
+}
+.card-ifno__job {
+    color: #7D7D7D;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.35;
+}
+.card-social {
+    position: absolute;
+    left: 105px;
+    top: 241px;
+    visibility: hidden;
+    
+}
+.card-social__item {
+    display: inline-block;
+}
+.card-social__item:not(:last-child) {
+    margin-right: 13px;
+}
+
+.card-social__link img:hover {
+    transform: scale(1.1);
+}
