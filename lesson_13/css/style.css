@@ -1,0 +1,381 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+  background-color: #333;
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.wrap {
+  min-height: 100%;
+  overflow: clip;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.transform {
+  padding-top: 100px;
+}
+.transform__title {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.transform__row:not(:last-child) {
+  margin-bottom: 30px;
+}
+.transform__block {
+  display: inline-block;
+}
+.transform__block:not(:last-child) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(248, 248, 248, 0.2);
+}
+.block__item {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px 0;
+  width: 200px;
+  height: 200px;
+  background-color: #6d0303;
+}
+
+.translateX:hover {
+  transform: translateX(20px);
+}
+.translateY:hover {
+  transform: translateY(-20px);
+}
+.translate:hover {
+  transform: translate(-20px, 20px);
+}
+
+.scaleX:hover {
+  transform: scaleX(.9);
+}
+.scaleY:hover {
+  transform: scaleY(.8);
+}
+.scale:hover {
+  transform: scale(0.8, 0.8);
+}
+
+.rotate:hover {
+  transform: rotate(20deg);
+}
+
+.skewX:hover {
+  transform: skewX(20deg);
+}
+.skewY:hover {
+  transform: skewY(-20deg);
+}
+.skew:hover {
+  transform: skew(-20deg, 20deg);
+}
+
+.transformMn:hover {
+  transform: translate(20px, 15px) scale(0.8) rotate(20deg) skew(-20deg);
+}
+
+.origin:hover {
+  transform: rotate(-20deg);
+  transform-origin: 30% -50%;
+}
+
+.d3 {
+  perspective: 100px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  
+}
+
+.translate3d:hover {
+  transform: translate3d(-20px, -20px, 20px);
+}
+
+.rotate3d:hover {
+  transform: rotate3d(15, 0, 0, 20deg);
+}
+
+.flip {
+}
+.flip__body {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  perspective: 600px;
+}
+.flip__front, .flip__back {
+  padding: 30px;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all .3s;
+}   
+.flip__front {
+  background-color: #d2691e;
+  transform: rotateX(0deg);
+  backface-visibility: hidden;
+}
+.flip__back {
+  background-color: #b7d21e;
+  transform: rotateX(-180deg);
+}
+.flip__body:hover .flip__back {
+  transform: rotateX(0deg);
+}
+.flip__body:hover .flip__front {
+  transform: rotateX(180deg);
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.footer__link {
+  padding: 20px;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.footer__link span {
+  position: relative;
+}
+.footer__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #77608d;
+  transform: skew(-30deg, 0deg);
+}
+.footer__link:hover::before {
+  background-color: #608d6b;
+  transform: skew(30deg, 0deg);
+}
+
+.car {
+  position: absolute;
+  bottom: 120px;
+  left: 15%;
+}
+  
+.car__body {
+  position: relative;
+}
+  
+.car__back {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 120px;
+  background-color: rgb(8, 6, 6);
+  border-radius: 100% 0% 90% 10% / 52% 100% 0% 48%;
+  transform: translateX(33px);
+  z-index: 2;
+}
+  
+.car__central {
+  position: relative;
+  display: inline-block;
+  width: 430px;
+  height: 210px;
+  background-color: rgb(8, 6, 6);
+  border-radius: 50% 100% 0% 0% / 75% 100% 21% 85%;
+  transform: translateY(-4px);
+  z-index: 1;
+}
+
+.car__window {
+  width: 315px;
+  height: 80px;
+  background-color: rgb(182, 179, 179);
+  border-radius: 10% 90% 80% 0% / 50% 100% 0% 0%;
+  transform: translate(80px, 10px);
+  border: 3px solid #939090;
+}
+
+.car__door {
+  width: 312px;
+  height: 110px;
+  background-color: rgb(8, 6, 6);
+  border: 2px solid #7e7e7e;
+  border-radius: 10% 20% 0% 10% / 0% 100% 0% 80%;
+  transform: translate(100px, 12px);
+}
+
+.car__handle {
+  width: 40px;
+  height: 7px;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  z-index: 3;
+  background-color: #c0c0c0;
+  transform: rotate(1deg) skew(45deg);
+  border-radius: 2px;
+}
+
+.car__line {
+  position: absolute;
+  top: 80px;
+  left: 13px;
+  width: 290px;
+  height: 15px;
+  background-color: #ffffff;
+  transform: skewX(30deg);
+  z-index: 2;
+}
+
+.car__mirror {
+  width: 60px;
+  height: 40px;
+  background: rgb(8, 6, 6);
+  border: solid 1px #bebebe;
+  border-radius: 10% 37% 83% 17% / 20% 60% 21% 84%;
+  transform: translate(245px, -25px);
+}
+
+.car__front {
+  position: relative;
+  display: inline-block;
+  width: 295px;
+  height: 105px;
+  background-color: rgb(8, 6, 6);
+  border-radius: 15% 80% 27% 57% / 100% 24% 76% 0%;
+  transform: translateX(-60px);
+}
+
+.car__headlight {
+  position: absolute;
+}
+
+.car__headlight--front {
+  right: 5px;
+  top: 15px;
+  width: 80px;
+  height: 30px;
+  background-color: #e7e1c1;
+  border-radius: 32% 68% 90% 10% / 14% 79% 21% 86%;
+}
+.car__headlight--front::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  width: 40px;
+  height: 15px;
+  border-radius: 55% 45% 19% 81% / 13% 23% 77% 87%;
+  background: #6a6ad4;
+}
+
+
+.car__headlight--back {
+  top: 40px;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  background-color: #c20a0a;
+  border-radius: 83% 17% 88% 12% / 51% 63% 37% 49%;
+} 
+.car__bottom {
+  position: absolute;
+  bottom: -13px;
+  left: 30px;
+  width: 660px;
+  height: 20px;
+  background-color: rgb(8, 6, 6);;
+  border-radius: 100% 0% 90% 10% / 0% 60% 40% 100%;
+}
+
+.wheel {
+  position: absolute;
+  bottom: -50px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #2c2828;
+  border: 15px solid #000;
+  z-index: 2;
+}
+
+.wheel::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+.wheel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #ff0000;
+}
+
+.wheel--back {
+  left: 100px;
+}
+
+.wheel--front {
+  right: 130px;
+}
+
+.wheel__line {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background-color: #ff0000;
+}
+
+.wheel__line:nth-child(1) {
+  transform: translateX(45px);
+}
+
+.wheel__line:nth-child(2) {
+  transform: translateX(45px) rotate(-310deg);
+}
+
+.wheel__line:nth-child(3) {
+  transform: translateX(45px) rotate(310deg);
+}
+.wheel__line:nth-child(4) {
+  transform: translateX(45px) rotate(270deg);
+}
+  
