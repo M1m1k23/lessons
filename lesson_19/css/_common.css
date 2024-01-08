@@ -1,0 +1,27 @@
+.title {
+    color: #3C4242;
+    font-family: "Core Sans C", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: 0.68px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.title::before {
+    content: '';
+    flex: 0 1 6px;
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+}
+
+@media (max-width: 490px) {
+    .title {
+        font-size: 30px;
+        gap: 10px;
+    }
+}
