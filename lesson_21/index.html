@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 21</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--active">Shop</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Men</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Women</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Combos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Joggers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__search search-header">
+                    <input type="text" name="search" placeholder="Search" class="search-header__input">
+                </div>
+                <div class="header__actions actions">
+                    <a href="#" class="actions__item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99486 4.93014C8.49535 3.18262 5.99481 2.71255 4.11602 4.31275C2.23723 5.91295 1.97273 8.5884 3.44815 10.481C4.67486 12.0545 8.38733 15.3732 9.60407 16.4474C9.7402 16.5675 9.80827 16.6276 9.88766 16.6512C9.95695 16.6718 10.0328 16.6718 10.1021 16.6512C10.1815 16.6276 10.2495 16.5675 10.3857 16.4474C11.6024 15.3732 15.3149 12.0545 16.5416 10.481C18.017 8.5884 17.7848 5.89611 15.8737 4.31275C13.9626 2.72938 11.4944 3.18262 9.99486 4.93014Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    </a>
+                    <a href="#" class="actions__item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.99992 11.6667C12.3011 11.6667 14.1666 9.8012 14.1666 7.50001C14.1666 5.19882 12.3011 3.33334 9.99992 3.33334C7.69873 3.33334 5.83325 5.19882 5.83325 7.50001C5.83325 9.8012 7.69873 11.6667 9.99992 11.6667ZM9.99992 11.6667C6.31802 11.6667 3.33325 13.9053 3.33325 16.6667M9.99992 11.6667C13.6818 11.6667 16.6666 13.9053 16.6666 16.6667" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="actions__item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.5 3.33334H3.00526C3.85578 3.33334 4.56986 3.97376 4.6621 4.81926L5.3379 11.0141C5.43014 11.8596 6.14422 12.5 6.99474 12.5H14.205C14.9669 12.5 15.6317 11.9834 15.82 11.2452L16.9699 6.73593C17.2387 5.68213 16.4425 4.65742 15.355 4.65742H5.5M5.52063 15.5208H6.14563M5.52063 16.1458H6.14563M14.6873 15.5208H15.3123M14.6873 16.1458H15.3123M6.66667 15.8333C6.66667 16.2936 6.29357 16.6667 5.83333 16.6667C5.3731 16.6667 5 16.2936 5 15.8333C5 15.3731 5.3731 15 5.83333 15C6.29357 15 6.66667 15.3731 6.66667 15.8333ZM15.8333 15.8333C15.8333 16.2936 15.4602 16.6667 15 16.6667C14.5398 16.6667 14.1667 16.2936 14.1667 15.8333C14.1667 15.3731 14.5398 15 15 15C15.4602 15 15.8333 15.3731 15.8333 15.8333Z" stroke="#807D7E" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <button class="icon-menu">
+                        <span></span>
+                    </button>
+                </div>
+
+            </div>
+            
+        </header>
+        <main class="page">
+            <section class="hero hero--margin">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h3 class="hero__tag">T-shirt / Tops</h3>
+                        <h1 class="hero__title">Summer Value Pack</h1>
+                        <div class="hero__text">
+                            <p>cool / colorful / comfy</p>
+                        </div>
+                        <a href="#" class="hero__button button">Shop Now</a>
+                    </div>
+                    <img src="img/hero/hero-bg.png" alt="Hero images bg" class="hero__img-bg">
+                    <button class="hero__arrow hero__arrow--prev">
+                        <img src="icons/hero/arrow-prev.svg" alt="arrow-prev">
+                    </button>
+                    <button class="hero__arrow hero__arrow--next">
+                        <img src="icons/hero/arrow-next.svg" alt="arrow-next">
+                    </button>
+                    <div class="hero__pagination pagination">
+                        <div class="pagination__item pagination__item--active"></div>
+                        <div class="pagination__item"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="explore">
+                <div class="explore__container">
+                    <article class="explore__item item-explore">
+                        <img src="img/explore/01.webp" alt="Yellow background" class="item-explore__image">
+                        <div class="item-explore__content">
+                            <h4 class="item-explore__label">Low Price</h4>
+                            <h2 class="item-explore__title">High Coziness</h2>
+                            <h3 class="item-explore__discount">UPTO 50% OFF</h3>
+                            <a href="" class="item-explore__link">Explore Items</a>
+                        </div>
+                    </article>
+                    <article class="explore__item item-explore">
+                        <img src="img/explore/02.webp" alt="Purple background" class="item-explore__image">
+                        <div class="item-explore__content">
+                            <h4 class="item-explore__label">Beyoung Presents</h4>
+                            <h2 class="item-explore__title">Breezy Summer Style</h2>
+                            <h3 class="item-explore__discount">UPTO 50% OFF</h3>
+                            <a href="" class="item-explore__link">Explore Items</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <section class="arrival">
+                <div class="arrival__container">
+                    <h2 class="arrival__title title">New Arrival</h2>
+                    <div class="arrival__body">
+                        <a href="#" class="arrival__arrow arrival__arrow--prev"></a>
+                        <div class="arrival__items">
+                            <article class="arrival__item item-arrival">
+                                <a href="" class="item-arrival__img-link">
+                                    <img src="img/arrival/joggers.webp" alt="Knitted Joggers" class="item-arrival__img">
+                                </a>
+                                <h3 class="item-arrival__name">Knitted Joggers</h3>
+                            </article>
+                            <article class="arrival__item item-arrival">
+                                <a href="" class="item-arrival__img-link">
+                                    <img src="img/arrival/sleeve.webp" alt="Full Sleeve" class="item-arrival__img">
+                                </a>
+                                <h3 class="item-arrival__name">Full Sleeve</h3>
+                            </article>
+                            <article class="arrival__item item-arrival">
+                                <a href="" class="item-arrival__img-link">
+                                    <img src="img/arrival/t-shirts.webp" alt="Active T-Shirts" class="item-arrival__img">
+                                </a>
+                                <h3 class="item-arrival__name">Active T-Shirts</h3>
+                            </article>
+                            <article class="arrival__item item-arrival">
+                                <a href="" class="item-arrival__img-link">
+                                    <img src="img/arrival/shrits.webp" alt="Urban Shirts" class="item-arrival__img">
+                                </a>
+                                <h3 class="item-arrival__name">Urban Shirts</h3>
+                            </article>
+                        </div>
+                        <a href="#" class="arrival__arrow arrival__arrow--next"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="saving">
+                <div class="saving__container">
+                    <h2 class="saving__title title">Big Saving Zone</h2>
+                    <div class="saving__items">
+                        <article class="saving__item item-saving">
+                            <div class="item-saving__content">
+                                <h4 class="item-saving__title">Hawaiian Shirts</h4>
+                                <h5 class="item-saving__subtitle">Dress up in summer vibe</h5>
+                                <div class="item-saving__discount">UPTO 50% OFF</div>
+                                <div class="item-saving__links">
+                                    <div class="item-saving__arrow">
+                                        <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>    
+                                    </div>
+                                    <a href="" class="item-saving__link">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <img src="img/saving/01.webp" alt="01" class="item-saving__img">
+                        </article>
+                        <article class="saving__item item-saving item-saving--right item-saving--stock">
+                            <div class="item-saving__content">
+                                <a href="#" class="item-saving__button">Limited Stock</a>
+                                <h4 class="item-saving__title">Printed T-Shirt</h4>
+                                <h5 class="item-saving__subtitle">New Designs Every Week</h5>
+                                <div class="item-saving__discount">UPTO 40% OFF</div>
+                                <div class="item-saving__links">
+                                    <div class="item-saving__arrow">
+                                        <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>    
+                                    </div>
+                                    <a href="" class="item-saving__link">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <img src="img/saving/02.webp" alt="02" class="item-saving__img">
+                        </article>
+                        <article class="saving__item item-saving item-saving--right">
+                            <div class="item-saving__content item-saving__content--dark">
+                                <h4 class="item-saving__title">Cargo Joggers</h4>
+                                <h5 class="item-saving__subtitle">Move with style & comfort</h5>
+                                <div class="item-saving__discount">UPTO 50% OFF</div>
+                                <div class="item-saving__links">
+                                    <div class="item-saving__arrow item-saving__arrow--dark">
+                                        <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>    
+                                    </div>
+                                    <a href="" class="item-saving__link item-saving__link--dark">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <img src="img/saving/03.webp" alt="03" class="item-saving__img">
+                        </article>
+                        <article class="saving__item item-saving item-saving--big">
+                            <div class="item-saving__content item-saving__content--dark">
+                                <h4 class="item-saving__title">Urban Shirts</h4>
+                                <h5 class="item-saving__subtitle">Live In Confort</h5>
+                                <div class="item-saving__discount">FLAT 60% OFF</div>
+                                <div class="item-saving__links">
+                                    <div class="item-saving__arrow item-saving__arrow--dark">
+                                        <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>    
+                                    </div>
+                                    <a href="" class="item-saving__link item-saving__link--dark">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <img src="img/saving/04.webp" alt="04" class="item-saving__img">
+                        </article>
+                        <article class="saving__item item-saving item-saving--big">
+                            <div class="item-saving__content item-saving__content--dark">
+                                <h4 class="item-saving__title">Oversized T-Shirts</h4>
+                                <h5 class="item-saving__subtitle">Street Style Icon</h5>
+                                <div class="item-saving__discount">FLAT 60% OFF</div>
+                                <div class="item-saving__links">
+                                    <div class="item-saving__arrow item-saving__arrow--dark">
+                                        <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>    
+                                    </div>
+                                    <a href="" class="item-saving__link item-saving__link--dark">SHOP NOW</a>
+                                </div>
+                            </div>
+                            <img src="img/saving/05.webp" alt="05" class="item-saving__img">
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fashion">
+                <div class="fashion__container">
+                    <div class="fashion__image fashion__image--left">
+                        <img src="img/fashion/left.webp" alt="fashion image">
+                        <div class="fashion__content">
+                            <h3 class="fashion__title">WE MADE YOUR EVERYDAY FASHION BETTER!</h3>
+                            <div class="fashion__text">
+                                <p>
+                                    In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7
+                                </p>
+                            </div>
+                            <a href="" class="fashion__button button">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="fashion__image fashion__image--right">
+                        <img src="img/fashion/people.webp" alt="fashion image people">
+                    </div>
+                </div>
+            </section>
+
+            <section class="men">
+                <div class="men__container">
+                    <h2 class="men__title title">Categories For Men</h2>
+                    <div class="men__items">
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/shirts.webp" alt="shirts" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Shirts</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/printed.webp" alt="printed" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Printed T-Shirts</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/plain.webp" alt="plain" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Plain T-Shirt</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/polo.webp" alt="polo" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Polo T-Shirt</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/hoodies.webp" alt="hoodies" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Hoodies & Sweetshirt</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/jeans.webp" alt="jeans" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Jeans</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/activewear.webp" alt="activewear" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Activewear</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="men__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/men/boxers.webp" alt="shirts" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Boxers</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="women">
+                <div class="women__container">
+                    <h2 class="women__title title">Categories For Women</h2>
+                    <div class="women__items">
+                        <article class="women__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/women/hoodies.webp" alt="hoodies" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Hoodies & Sweetshirt</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="women__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/women/coats.webp" alt="coats" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Coats & Parkas</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="women__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/women/tees.webp" alt="tees" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Tees & T-Shirt</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                        <article class="women__item item-category">
+                            <a href="#" class="item-category__image-link">
+                                <img src="img/women/boxers.webp" alt="boxers" class="item-category__image">
+                            </a>
+                            <div class="item-category__body">
+                                <h4 class="item-category__title">
+                                    <a href="#" class="item-category__link-title">Boxers</a>
+                                </h4>
+                                <div class="item-category__label">Explore Now!</div>
+                                <a href="#" class="item-category__link"></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brands">
+                <div class="brands__container">
+                    <div class="brands__content">
+                        <h2 class="brands__title">Top Brands Deal</h2>
+                        <h3 class="brands__subtitle">Up To <span>60%</span> off on brands</h3>
+                        <div class="brands__items">
+                            <a href="#" class="brands__item">
+                                <img src="img/brands/nike.webp" alt="nike">
+                            </a>
+                            <a href="#" class="brands__item">
+                                <img src="img/brands/h&m.webp" alt="H&M">
+                            </a>
+                            <a href="#" class="brands__item">
+                                <img src="img/brands/levis.webp" alt="Levi's">
+                            </a>
+                            <a href="#" class="brands__item">
+                                <img src="img/brands/poloassn.webp" alt="U.S Polo Assn.">
+                            </a>
+                            <a href="#" class="brands__item">
+                                <img src="img/brands/puma.webp" alt="Puma">
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+
+            <section class="limelight">
+                <div class="limelight__container">
+                    <h2 class="limelight__title title">In The Limelight</h2>
+                    <div class="limelight__items">
+                        <article class="limelight__item item-limelight">
+                            <a href="#" class="item-limelight__favorite"></a>
+                            <a href="#" class="item-limelight__image-link">
+                                <img src="img/limelight/sweatshirt.webp" alt="sweatshirt" class="item-limelight__image">
+                            </a>
+                            <div class="item-limelight__body">
+                                <h4 class="item-limelight__title">
+                                    <a href="#" class="item-limelight__link-title">Black Sweatshirt with ....</a>
+                                </h4>
+                                <div class="item-limelight__brand">Jhanvi’s  Brand</div>
+                                <div class="item-limelight__price">$123.00</div>
+                            </div>
+                        </article>
+                        <article class="limelight__item item-limelight">
+                            <a href="#" class="item-limelight__favorite"></a>
+                            <a href="#" class="item-limelight__image-link">
+                                <img src="img/limelight/line-pattern.webp" alt="line-pattern" class="item-limelight__image">
+                            </a>
+                            <div class="item-limelight__body">
+                                <h4 class="item-limelight__title">
+                                    <a href="#" class="item-limelight__link-title">line Pattern Black H..</a>
+                                </h4>
+                                <div class="item-limelight__brand">AS’s  Brand</div>
+                                <div class="item-limelight__price">$37.00</div>
+                            </div>
+                        </article>
+                        <article class="limelight__item item-limelight">
+                            <a href="#" class="item-limelight__favorite"></a>
+                            <a href="#" class="item-limelight__image-link">
+                                <img src="img/limelight/black-shorts.webp" alt="black-shorts" class="item-limelight__image">
+                            </a>
+                            <div class="item-limelight__body">
+                                <h4 class="item-limelight__title">
+                                    <a href="#" class="item-limelight__link-title">Black Shorts</a>
+                                </h4>
+                                <div class="item-limelight__brand">MM’s  Brand</div>
+                                <div class="item-limelight__price">$37.00</div>
+                            </div>
+                        </article>
+                        <article class="limelight__item item-limelight">
+                            <a href="#" class="item-limelight__favorite"></a>
+                            <a href="#" class="item-limelight__image-link">
+                                <img src="img/limelight/levender.webp" alt="levender" class="item-limelight__image">
+                            </a>
+                            <div class="item-limelight__body">
+                                <h4 class="item-limelight__title">
+                                    <a href="#" class="item-limelight__link-title">Levender Hoodie with ....</a>
+                                </h4>
+                                <div class="item-limelight__brand">Nike’s  Brand</div>
+                                <div class="item-limelight__price">$119.00</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback">
+                <div class="feedback__container">
+                    <h2 class="feedback__title title">Feedback</h2>
+                    <div class="feedback__items">
+                        <div class="feedback__item item-feedback">
+                            <div class="item-feedback__top">
+                                <div class="item-feedback__image">
+                                    <img src="img/feedback/01.webp" alt="Floyd Miles">
+                                </div>
+                                <div class="item-feedback__star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6882 9.12325L14.7398 8.52407L12.0242 2.12646L9.30857 8.53374L2.36011 9.12325L7.63669 13.6943L6.05178 20.4882L12.0242 16.8835L17.9966 20.4882L16.4213 13.6943L21.6882 9.12325ZM12.0242 15.0763V6.08873L13.6767 9.99301L17.9096 10.3602L14.7011 13.1435L15.6675 17.2797L12.0242 15.0763Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.7476 9.12325L14.7991 8.52407L12.0835 2.12646L9.36789 8.53374L2.41943 9.12325L7.69601 13.6943L6.11111 20.4882L12.0835 16.8835L18.0559 20.4882L16.4806 13.6943L21.7476 9.12325ZM12.0835 15.0763L8.44981 17.2701L9.41621 13.1338L6.20775 10.3506L10.4406 9.98335L12.0835 6.08873L13.7361 9.99301L17.9689 10.3602L14.7604 13.1435L15.7268 17.2797L12.0835 15.0763Z" fill="#EDD146"/>
+                                    </svg> 
+                                </div>
+                            </div>
+                            <h4 class="item-feedback__name">Floyd Miles</h4>
+                            <div class="item-feedback__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                                <p>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                        <div class="feedback__item item-feedback">
+                            <div class="item-feedback__top">
+                                <div class="item-feedback__image">
+                                    <img src="img/feedback/02.webp" alt="Ronald Richards">
+                                </div>
+                                <div class="item-feedback__star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.7476 9.12325L14.7991 8.52407L12.0835 2.12646L9.36789 8.53374L2.41943 9.12325L7.69601 13.6943L6.11111 20.4882L12.0835 16.8835L18.0559 20.4882L16.4806 13.6943L21.7476 9.12325ZM12.0835 15.0763L8.44981 17.2701L9.41621 13.1338L6.20775 10.3506L10.4406 9.98335L12.0835 6.08873L13.7361 9.99301L17.9689 10.3602L14.7604 13.1435L15.7268 17.2797L12.0835 15.0763Z" fill="#EDD146"/>
+                                    </svg> 
+                                </div>
+                            </div>
+                            <h4 class="item-feedback__name">Ronald Richards</h4>
+                            <div class="item-feedback__text">
+                                <p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                        <div class="feedback__item item-feedback">
+                            <div class="item-feedback__top">
+                                <div class="item-feedback__image">
+                                    <img src="img/feedback/03.webp" alt="Savannah Nguyen">
+                                </div>
+                                <div class="item-feedback__star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.8459 16.8835L17.8183 20.4882L16.2334 13.6943L21.51 9.12325L14.5615 8.53374L11.8459 2.12646L9.13035 8.53374L2.18188 9.12325L7.45846 13.6943L5.87356 20.4882L11.8459 16.8835Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.6882 9.12325L14.7398 8.52407L12.0242 2.12646L9.30857 8.53374L2.36011 9.12325L7.63669 13.6943L6.05178 20.4882L12.0242 16.8835L17.9966 20.4882L16.4213 13.6943L21.6882 9.12325ZM12.0242 15.0763V6.08873L13.6767 9.99301L17.9096 10.3602L14.7011 13.1435L15.6675 17.2797L12.0242 15.0763Z" fill="#EDD146"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.7476 9.12325L14.7991 8.52407L12.0835 2.12646L9.36789 8.53374L2.41943 9.12325L7.69601 13.6943L6.11111 20.4882L12.0835 16.8835L18.0559 20.4882L16.4806 13.6943L21.7476 9.12325ZM12.0835 15.0763L8.44981 17.2701L9.41621 13.1338L6.20775 10.3506L10.4406 9.98335L12.0835 6.08873L13.7361 9.99301L17.9689 10.3602L14.7604 13.1435L15.7268 17.2797L12.0835 15.0763Z" fill="#EDD146"/>
+                                    </svg> 
+                                </div>
+                            </div>
+                            <h4 class="item-feedback__name">Savannah Nguyen</h4>
+                            <div class="item-feedback__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                <p>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__pagination">
+                        <div class="feedback__pagination-item feedback__pagination-item--active"></div>
+                        <div class="feedback__pagination-item"></div>
+                        <div class="feedback__pagination-item"></div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__menu menu-footer">
+                    <div class="menu-footer__block">
+                        <h5 class="menu-footer__title">Need Help</h5>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Contact Us</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Track Order</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Returns & Refunds</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">FAQ's</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Career</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-footer__block">
+                        <h5 class="menu-footer__title">Company</h5>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">About Us</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Euphoria Blog</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Euphoriastan</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Collaboration</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Media</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-footer__block">
+                        <h5 class="menu-footer__title">More Info</h5>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Term and Conditions</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Privacy Policy</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Shipping Policy</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-footer__block">
+                        <h5 class="menu-footer__title">Location</h5>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="mailto:support@euphoria.in" class="menu-footer__link">support@euphoria.in</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                Eklingpura Chouraha, Ahmedabad Main Road
+                            </li>
+                            <li class="menu-footer__item">
+                                (NH 8- Near Mahadev Hotel) Udaipur, India - 313002
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__body">
+                    <div class="footer__social social-footer">
+                        <ul class="social-footer__list">
+                            <li class="social-footer__item">
+                                <a target="_blank" href="#" class="social-footer__link social-footer__link--facebook"></a>
+                            </li>
+                            <li class="social-footer__item">
+                                <a target="_blank" href="#" class="social-footer__link social-footer__link--instagram"></a>
+                            </li>
+                            <li class="social-footer__item">
+                                <a target="_blank" href="#" class="social-footer__link social-footer__link--twitter"></a>
+                            </li>
+                            <li class="social-footer__item">
+                                <a target="_blank" href="#" class="social-footer__link social-footer__link--linkedin"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__download download-apps">
+                        <h5 class="download-apps__title">Download The App</h5>
+                        <div class="download-apps__items">
+                            <a href="#" class="download-apps__item" target="_blank">
+                                <img src="img/footer/google.svg" alt="Google Play">
+                            </a>
+                            <a href="#" class="download-apps__item" target="_blank">
+                                <img src="img/footer/apple.svg" alt="Apple Store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__categories popular-categories">
+                    <h5 class="popular-categories__title">
+                        <button class="popular-categories__button-title">Popular Categories</button>
+                    </h5>
+
+                </div>
+                <div class="footer__copy">
+                    Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+                </div>
+            </div>
+        </footer> 
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
