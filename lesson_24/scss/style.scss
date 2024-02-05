@@ -1,0 +1,33 @@
+@use "sass:math";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/functions";
+@import "blocks/reset";
+@import "blocks/common";
+@import "fonts";
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: toRem(18);
+    .menu-open & {
+        overflow: hidden;
+    }
+}
+.wrap {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+.page {
+    flex: 1 1 auto;
+}
+
+[class*="__container"] {
+	max-width: toRem(1250);
+	margin: 0 auto;
+	padding: toRem(0) toRem(15);
+}
+
